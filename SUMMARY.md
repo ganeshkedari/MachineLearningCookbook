@@ -2,6 +2,6 @@
 
 * [Machine Learning Cookbook](README.md)
 * [Machine Learning Tools](machine-learning-tools.md)
-* [Anaconda](anaconda.md)
-* [Spyder](spyder.md)
+* [Machine learning Concepts](Machine-learning-Concepts.md)
+
 

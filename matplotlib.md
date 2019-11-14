@@ -1,6 +1,6 @@
-# Spyder
+# Matplotlib
 
-## What is Spyder
+## What is Matplotlib
 
 ## When 
 
@@ -11,4 +11,3 @@
 ## Who 
 
 ## How
-

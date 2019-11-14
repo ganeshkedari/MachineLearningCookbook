@@ -1,6 +1,6 @@
-# Spyder
+# Numpy
 
-## What is Spyder
+## What is Numpy
 
 ## When 
 
@@ -11,4 +11,3 @@
 ## Who 
 
 ## How
-
