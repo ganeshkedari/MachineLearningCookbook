@@ -2,7 +2,7 @@
 
 ## Package Managers 
 
-### Anaconda
+### [Anaconda](anaconda.md)
 
 ## Integrated Development Environments
 

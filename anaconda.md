@@ -12,3 +12,7 @@
 
 ## How
 
+* Download Anaconda 
+* Installation
+* Using Conda for installing packages 
+
