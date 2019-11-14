@@ -6,5 +6,7 @@
 
 ## Integrated Development Environments
 
+### [Jupyter Notebook](Jupyter-Notebook.md)
+
 ### Spyder
 
