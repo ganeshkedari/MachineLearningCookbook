@@ -1,7 +1,10 @@
 # Machine Learning Tools
 
-Package Managers
-    Anaconda
+## Package Managers 
 
-Integrated Development Environments 
-    
+### Anaconda
+
+## Integrated Development Environments
+
+### Spyder
+
