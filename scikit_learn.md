@@ -1,6 +1,6 @@
-# matplotlib
+# Scikit\_Learn
 
-## What is Matplotlib
+## What is Scikit\_Learn
 
 ## When
 

@@ -1,14 +1,14 @@
 # Anaconda
 
-## What 
+## What
 
-## When 
+## When
 
-## Why 
+## Why
 
-## Where 
+## Where
 
-## Who 
+## Who
 
 ## How
 

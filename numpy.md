@@ -1,6 +1,6 @@
-# matplotlib
+# NumPy
 
-## What is Matplotlib
+## What is Numpy
 
 ## When
 

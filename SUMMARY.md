@@ -3,11 +3,10 @@
 * [Machine Learning Cookbook](README.md)
 * [Machine Learning Tools](machine-learning-tools.md)
 * [Anaconda](anaconda.md)
-* [Pandas](Pandas.md)
-* [NumPy](NumPy.md)
-* [Scikit_Learn](Scikit_Learn.md)
+* [Pandas](pandas.md)
+* [NumPy](numpy.md)
+* [Scikit\_Learn](scikit_learn.md)
 * [matplotlib](matplotlib.md)
-* [Machine learning Concepts](Machine-learning-Concepts.md)
-* [What is Data](Data.md)
-
+* [Machine learning Concepts](machine-learning-concepts.md)
+* [What is Data](data.md)
 
