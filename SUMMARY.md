@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Machine Learning Cookbook](README.md)
+* [Machine Learning](README.md)
 
 ## Machine Learning Tools <a id="machine-learning-tools-1"></a>
 
