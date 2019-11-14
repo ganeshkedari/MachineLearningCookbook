@@ -1,5 +1,6 @@
 # Table of contents
 
-* [Introduction](README.md)
-* [First Chapter](chapter1.md)
+* [Machine Learning Cookbook](README.md)
+* [Machine Learning Tools](machine-learning-tools.md)
+* [Anaconda](anaconda.md)
 
