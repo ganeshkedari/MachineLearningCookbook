@@ -1,12 +1,18 @@
 # Table of contents
 
 * [Machine Learning Cookbook](README.md)
-* [Machine Learning Tools](machine-learning-tools.md)
-* [Anaconda](anaconda.md)
-* [Pandas](pandas.md)
-* [NumPy](numpy.md)
-* [Scikit\_Learn](scikit_learn.md)
-* [matplotlib](matplotlib.md)
-* [Machine learning Concepts](machine-learning-concepts.md)
-* [What is Data](data.md)
+
+## Machine Learning Tools <a id="machine-learning-tools-1"></a>
+
+* [Machine Learning Tools](machine-learning-tools-1/machine-learning-tools.md)
+* [Pandas](machine-learning-tools-1/pandas.md)
+* [Anaconda](machine-learning-tools-1/anaconda.md)
+* [NumPy](machine-learning-tools-1/numpy.md)
+* [Scikit\_Learn](machine-learning-tools-1/scikit_learn.md)
+* [matplotlib](machine-learning-tools-1/matplotlib.md)
+
+## Machine Learning Concepts <a id="machine-learning-concepts-1"></a>
+
+* [Machine learning Concepts](machine-learning-concepts-1/machine-learning-concepts.md)
+* [What is Data](machine-learning-concepts-1/data.md)
 
