@@ -6,17 +6,17 @@
 
 ## Integrated Development Environments
 
-### [Jupyter Notebook](https://github.com/ganeshkedari/MachineLearningCookbook/tree/df51ae6e2afeca26ac8d1b6ffdafd346ccaf7fcf/Jupyter-Notebook.md)
+### Jupyter Notebook
 
 ### Spyder
 
 ## Libraries
 
-### [Pandas](https://github.com/ganeshkedari/MachineLearningCookbook/tree/df51ae6e2afeca26ac8d1b6ffdafd346ccaf7fcf/Pandas.md)
+### [Pandas](pandas.md)
 
-### [NumPy](https://github.com/ganeshkedari/MachineLearningCookbook/tree/df51ae6e2afeca26ac8d1b6ffdafd346ccaf7fcf/NumPy.md)
+### [NumPy](numpy.md)
 
-### [Scikit\_Learn](https://github.com/ganeshkedari/MachineLearningCookbook/tree/df51ae6e2afeca26ac8d1b6ffdafd346ccaf7fcf/Scikit_Learn.md)
+### [Scikit\_Learn](scikit_learn.md)
 
-### [matplotlib](https://github.com/ganeshkedari/MachineLearningCookbook/tree/df51ae6e2afeca26ac8d1b6ffdafd346ccaf7fcf/matplotlib.md)
+### [matplotlib](matplotlib.md)
 
