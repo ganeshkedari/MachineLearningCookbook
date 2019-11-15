@@ -1,5 +1,8 @@
-# Central Tendency
+# Central tendency
 
 ## Mean
-## Median 
+
+## Median
+
 ## Mode
+

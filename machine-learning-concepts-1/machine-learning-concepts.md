@@ -1,13 +1,16 @@
 # Machine learning Concepts
 
-## What is Data
-## Central Tendency
-## Variance and Standerd Deviation
-## Probability
-## Data Distribution
-## Percentiles
-## Moments
+## [What is Data](data.md)
 
+## [Central Tendency](central-tendency.md)
 
+## [Variance and Standard Deviation](variance.md)
 
+## [Probability](probability.md)
+
+## [Data Distribution](data-distribution.md)
+
+## [Percentiles](percentiles.md)
+
+## [Moments](moments.md)
 

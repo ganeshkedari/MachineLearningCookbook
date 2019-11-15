@@ -10,7 +10,7 @@
 * [NumPy](machine-learning-tools-1/numpy.md)
 * [Scikit\_Learn](machine-learning-tools-1/scikit_learn.md)
 * [matplotlib](machine-learning-tools-1/matplotlib.md)
-* [Jupyter-Notebook](machine-learning-tools-1/Jupyter-Notebook.md)
+* [Jupyter-Notebook](machine-learning-tools-1/jupyter-notebook.md)
 * [spyder](machine-learning-tools-1/spyder.md)
 
 ## Machine Learning Concepts <a id="machine-learning-concepts-1"></a>
@@ -23,5 +23,4 @@
 * [Data Distribution](machine-learning-concepts-1/data-distribution.md)
 * [Percentiles](machine-learning-concepts-1/percentiles.md)
 * [Moments](machine-learning-concepts-1/moments.md)
-
 

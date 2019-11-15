@@ -1,14 +1,14 @@
-# Spyder
+# spyder
 
 ## What is Spyder
 
-## When 
+## When
 
-## Why 
+## Why
 
-## Where 
+## Where
 
-## Who 
+## Who
 
 ## How
 

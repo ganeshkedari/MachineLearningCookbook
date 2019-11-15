@@ -1,4 +1,6 @@
 # Probability
 
-## Probability Density Function 
-## Probability Mass Function 
+## Probability Density Function
+
+## Probability Mass Function
+
