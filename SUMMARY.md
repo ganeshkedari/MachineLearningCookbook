@@ -17,4 +17,11 @@
 
 * [Machine learning Concepts](machine-learning-concepts-1/machine-learning-concepts.md)
 * [What is Data](machine-learning-concepts-1/data.md)
+* [Central tendency](machine-learning-concepts-1/central-tendency.md)
+* [Variance and Standerd Deviation](machine-learning-concepts-1/variance.md)
+* [Probability](machine-learning-concepts-1/probability.md)
+* [Data Distribution](machine-learning-concepts-1/data-distribution.md)
+* [Percentiles.md](machine-learning-concepts-1/percentiles.md)
+* [Moments](machine-learning-concepts-1/moments.md)
+
 
