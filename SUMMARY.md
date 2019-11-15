@@ -21,7 +21,7 @@
 * [Variance and Standerd Deviation](machine-learning-concepts-1/variance.md)
 * [Probability](machine-learning-concepts-1/probability.md)
 * [Data Distribution](machine-learning-concepts-1/data-distribution.md)
-* [Percentiles.md](machine-learning-concepts-1/percentiles.md)
+* [Percentiles](machine-learning-concepts-1/percentiles.md)
 * [Moments](machine-learning-concepts-1/moments.md)
 
 
