@@ -10,6 +10,8 @@
 * [NumPy](machine-learning-tools-1/numpy.md)
 * [Scikit\_Learn](machine-learning-tools-1/scikit_learn.md)
 * [matplotlib](machine-learning-tools-1/matplotlib.md)
+* [Jupyter-Notebook](machine-learning-tools-1/Jupyter-Notebook.md)
+* [spyder](machine-learning-tools-1/spyder.md)
 
 ## Machine Learning Concepts <a id="machine-learning-concepts-1"></a>
 
