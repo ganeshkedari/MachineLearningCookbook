@@ -25,3 +25,5 @@
 * [Percentiles](machine-learning-concepts-1/percentiles.md)
 * [Moments](machine-learning-concepts-1/moments.md)
 
+## Machine Learning Models <a id="machine-learning-models"></a>
+* [Time Series Forcasting](machine-learning-models/time-series.md)
