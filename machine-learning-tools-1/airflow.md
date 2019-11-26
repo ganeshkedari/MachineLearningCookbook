@@ -19,8 +19,7 @@ Components Metadata Database - MYSQL Webserver - Flask Scheduler - Python Celery
 Building a Pipeline  
 Create a DAG Name Start Date Schedule max active run concurrency
 
-```text
-        Tasks    
+Tasks    
             Task ID
             python_callback - Python code / SQL /File
             DAG NAme
@@ -28,7 +27,7 @@ Create a DAG Name Start Date Schedule max active run concurrency
             Retries 
             Pool
             Variables
-```
+
 
 Executor Types Debugging Testing pipelines
 
