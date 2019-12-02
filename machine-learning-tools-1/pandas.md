@@ -1,20 +1,9 @@
 # Pandas
-
-## What is Pandas
-
-## When
-
-## Why
-
-## Where
-
-## Who
-
-## How
-
-* Data Frame
+# Data Frame
 * Importing Pandas Module
+    import pandas as pd
 * Reading CSV File in Pandas
+    df = pd.read_csv(<csv File Path>, sep=",")
 * Showing top Records - head\(\)
 * Showing last Records - tail\(\)
 * Shape of Data Frame
@@ -29,4 +18,9 @@
 * Sort Data Frame
 * Count Values in Column
 * Plot a Data Frame
-
+* Replace values in Column 
+    df[<Column Name>].replace(<Value to Serch>,<Value to Replace>,inplace=True)
+* Printing Column in Pandas
+    print(df[<Column Name>])   
+* Unique Values In A Column     
+    print(df.<Column Name>.unique())
