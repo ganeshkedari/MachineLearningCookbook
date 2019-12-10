@@ -1,9 +1,5 @@
 # Pandas
-<<<<<<< HEAD
 # Data Frame
-=======
-* Data Frame
->>>>>>> 07f93b360334b6a5532482b3c3346f6b1d3087ce
 * Importing Pandas Module
     import pandas as pd
 * Reading CSV File in Pandas
@@ -25,10 +21,8 @@
 * Replace values in Column 
     df[<Column Name>].replace(<Value to Serch>,<Value to Replace>,inplace=True)
 * Printing Column in Pandas
-<<<<<<< HEAD
     print(df[<Column Name>])   
 * Unique Values In A Column     
     print(df.<Column Name>.unique())
-=======
-    print(df[<Column Name>])    
->>>>>>> 07f93b360334b6a5532482b3c3346f6b1d3087ce
+ * Append a column in Dataframe
+    df[<Column Name>]=<Value to be appended>

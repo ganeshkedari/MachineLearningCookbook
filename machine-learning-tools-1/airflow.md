@@ -2,17 +2,38 @@
 
 Apache Airflow Platform to design and manage Workflow Workflow - Set of tasks , scheduled or triggred used for manage data pipelines
 
-Database &gt; Scripts &gt; HDFS Cron, ETL
+Work Flow is Squence of tasks - triggred and scheduled 
 
-Failure - Retry Monitoring Dependancies Job1 - Job 2 - Job 3 =&gt; failures Scalability  
-Deployment Backfill
+## Traditional Approch : 
+    Database &gt; Cron Scripts &gt; HDFS 
 
-Apache Airflow  
+* Failure - Retry 
+* Monitoring - Status
+* Dependancies Job1 - Job 2 - Job 3 =&gt; failures 
+* Scalability  
+* Deployment 
+* Backfill
+
+## Apache Airflow  
 Define tasks and dependancies in python Execute - View - Distribute History Logging UI and Plugins
 
-DAG / Pipeline Tasks /  Start -&gt; Tasks -&gt; END  / Tasks
+### Applications 
+* DW
+* ML 
+* Infra Maintenance
+* Email targetting
 
-Applications DW ML Infra Maintenance Email targetting
+### DAG - Directed Acyclic Graph - Pipeline Tasks 
+  Start -&gt; Tasks -&gt; END  
+
+## Installation 
+    docker pull puckel/docker-airflow
+    docker run -d -p 8080:8080 -e LOAD_EX=y puckel/docker-airflow
+* Accessing Containers
+    docker run --rm -ti puckel/docker-airflow bash
+    docker run --rm -ti puckel/docker-airflow ipython    
+
+
 
 Components Metadata Database - MYSQL Webserver - Flask Scheduler - Python Celery
 
@@ -31,6 +52,9 @@ Tasks
 
 Executor Types Debugging Testing pipelines
 
+## Admin Views
+### Graph View
+### Tree View - Historical View
 
 
 {% embed url="https://www.youtube.com/watch?v=tcJhSaowzUI" %}
