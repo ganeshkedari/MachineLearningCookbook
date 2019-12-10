@@ -5,11 +5,11 @@ Apache Airflow Platform to design and manage Workflow Workflow - Set of tasks , 
 Work Flow is Squence of tasks - triggred and scheduled 
 
 ## Traditional Approch : 
-    Database &gt; Cron Scripts &gt; HDFS 
+    Database -> Cron Scripts -> HDFS 
 
 * Failure - Retry 
 * Monitoring - Status
-* Dependancies Job1 - Job 2 - Job 3 =&gt; failures 
+* Dependancies Job1 - Job 2 - Job 3 => failures 
 * Scalability  
 * Deployment 
 * Backfill
@@ -24,7 +24,31 @@ Define tasks and dependancies in python Execute - View - Distribute History Logg
 * Email targetting
 
 ### DAG - Directed Acyclic Graph - Pipeline Tasks 
-  Start -&gt; Tasks -&gt; END  
+  Workflow of multiple tasks which can be run independantly Start -> Tasks -> END  
+  * Python Script - Organize tasks and set context
+   #### Steps 
+    * Import Modules
+    * Default Arguments - Python Dictionary of applicable values 
+        - Owner : 
+        - Start Date :
+        - End Date : 
+        - Depends on Past : TRUE/FALSE - Current instance will depend on past run status (Pass or fail)
+        - eMail : Notification
+         - eMail on failure: Notification
+         - eMail on retry : Notification
+        - retries : number of retries
+        - retry delay : time delta
+    * Initiate DAG
+            dag_name = DAG{Argumrnts} 
+            -  Name
+            - default_args
+            - description
+            - schedule_interval (Once , Hourly , Daily ... OR Cron Schedules)
+    * Tasks   
+      * Setup Dependancies - Order of tasks 
+        - Downstream / Upstream 
+        - Bitshift Operators
+        - Combined (Parallel)    
 
 ## Installation 
     docker pull puckel/docker-airflow
