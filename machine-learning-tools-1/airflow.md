@@ -81,7 +81,7 @@ Executor Types Debugging Testing pipelines
 ### Tree View - Historical View
 
 
-{% embed url="https://www.youtube.com/watch?v=tcJhSaowzUI" %}
+
 
 
 
