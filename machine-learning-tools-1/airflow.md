@@ -56,7 +56,11 @@ Define tasks and dependancies in python Execute - View - Distribute History Logg
 * Accessing Containers
     docker run --rm -ti puckel/docker-airflow bash
     docker run --rm -ti puckel/docker-airflow ipython    
+* Access As root 
+    docker exec -u root -it <containerID> bash
 
+* Kill all airflow schedulers
+kill $(ps -ef | grep "airflow scheduler" | awk '{print $2}')
 
 
 Components Metadata Database - MYSQL Webserver - Flask Scheduler - Python Celery
@@ -79,6 +83,10 @@ Executor Types Debugging Testing pipelines
 ## Admin Views
 ### Graph View
 ### Tree View - Historical View
+
+
+### Print the list of active DAGs
+airflow list_dags
 
 
 
