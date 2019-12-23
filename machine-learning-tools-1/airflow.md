@@ -1,112 +1,141 @@
 # Apache Airflow
 
-Apache Airflow Platform to design and manage Workflow Workflow - Set of tasks , scheduled or triggred used for manage data pipelines
+Apache Airflow Platform to design and manage workflows.  
+Workflow is Sequence of tasks - triggered and scheduled which are used for managing data pipelines. 
 
-Work Flow is Squence of tasks - triggred and scheduled 
+## Traditional Approach :
 
-## Traditional Approch : 
-    Database -> Cron Scripts -> HDFS 
+```text
+Database -> Cron Scripts -> Target Database /File system / HDFS
+```
 
-* Failure - Retry 
-* Monitoring - Status
-* Dependancies Job1 - Job 2 - Job 3 => failures 
-* Scalability  
-* Deployment 
-* Backfill
+* Challenges in Traditional Approach :
+  * Failure - Retry 
+  * Monitoring - Status
+  * Dependencies management
+  * Scalability  
+  * Deployment 
+  * Back-fill
 
-## Apache Airflow  
-Define tasks and dependancies in python Execute - View - Distribute History Logging UI and Plugins
+## Apache Airflow
 
-### Applications 
+Define tasks and dependencies in python 
+
+#### Airflow advantages : 
+
+* Execute 
+* View 
+* Distribute 
+* History 
+* Logging 
+* UI 
+* Plugins
+
+### Applications
+
 * DW
 * ML 
 * Infra Maintenance
-* Email targetting
+* Email targeting
 
-### DAG - Directed Acyclic Graph - Pipeline Tasks 
-  Workflow of multiple tasks which can be run independantly Start -> Tasks -> END  
-  * Python Script - Organize tasks and set context
-   #### Steps 
-   
-    * Import Modules
-    * Default Arguments - Python Dictionary of applicable values 
-        - Owner : 
-        - Start Date :
-        - End Date : 
-        - Depends on Past : TRUE/FALSE - Current instance will depend on past run status (Pass or fail)
-        - eMail : Notification
-         - eMail on failure: Notification
-         - eMail on retry : Notification
-        - retries : number of retries
-        - retry delay : time delta
-    * Initiate DAG
-            dag_name = DAG{Argumrnts} 
-            -  Name
-            - default_args
-            - description
-            - schedule_interval 
-    * DAG schedule Intervals 
-      - Once 
-      - Hourly @hourly 0 * * * *
-      - Daily @daily 0 0 * * * 
-      - Weekly @weekly 0 0 * * 0
-      - Monthly @monthly 0 0 1 * * 
-      - Yearly @yearly 0 0 1 1 * 
+### DAG - Directed Acyclic Graph - Pipeline Tasks
 
-    * Tasks   
-      * Setup Dependancies - Order of tasks 
-        - Downstream / Upstream 
-        - Bitshift Operators
-        - Combined (Parallel)    
+Workflow of multiple tasks which can be run independently Start -&gt; Tasks -&gt; END
 
-## Installation 
-    docker pull puckel/docker-airflow
-    docker run -d -p 8080:8080 -e LOAD_EX=n puckel/docker-airflow
+* Python Script - Organize tasks and set context
+
+  **Steps**
+
+  * Import Modules
+  * Default Arguments - Python Dictionary of applicable values 
+    * Owner : 
+    * Start Date :
+    * End Date : 
+    * Depends on Past : TRUE/FALSE - Current instance will depend on past run status \(Pass or fail\)
+    * eMail : Notification
+      * eMail on failure: Notification
+      * eMail on retry : Notification
+    * retries : number of retries
+    * retry delay : time delta
+  * Initiate DAG
+
+    ```text
+      dag_name = DAG{Argumrnts} 
+      -  Name
+      - default_args
+      - description
+      - schedule_interval 
+    ```
+
+  * DAG schedule Intervals
+    * Once 
+    * Hourly @hourly 0  __  __
+    * Daily @daily 0 0  __ \* 
+    * Weekly @weekly 0 0  __ 0
+    * Monthly @monthly 0 0 1  __ 
+    * Yearly @yearly 0 0 1 1 \* 
+  * Tasks
+    * Setup Dependancies - Order of tasks 
+      * Downstream / Upstream 
+      * Bitshift Operators
+      * Combined \(Parallel\)    
+
+## Installation
+
+```text
+docker pull puckel/docker-airflow
+docker run -d -p 8080:8080 -e LOAD_EX=n puckel/docker-airflow
+```
+
 * Accessing Containers
-```` 
+
+  \`\`\`\` 
+
     docker run --rm -ti puckel/docker-airflow bash
+
     docker run --rm -ti puckel/docker-airflow ipython
 
-````     
-* Access As root 
-````    
-    docker exec -u root -it <containerID> bash
-````
+```text
+* Access As root
+```
 
+```text
+docker exec -u root -it <containerID> bash
+```
+
+```text
 * Kill all airflow schedulers
-````
-    kill $(ps -ef | grep "airflow scheduler" | awk '{print $2}')
-````
+```
+
+```text
+kill $(ps -ef | grep "airflow scheduler" | awk '{print $2}')
+```
+
+\`\`\`\`
 
 Components Metadata Database - MYSQL Webserver - Flask Scheduler - Python Celery
 
 Building a Pipeline  
 Create a DAG Name Start Date Schedule max active run concurrency
 
-Tasks    
-            Task ID
-            python_callback - Python code / SQL /File
-            DAG NAme
-            Upstream
-            Retries 
-            Pool
-            Variables
-
+Tasks  
+Task ID python\_callback - Python code / SQL /File DAG NAme Upstream Retries Pool Variables
 
 Executor Types Debugging Testing pipelines
 
 ## Admin Views
+
 ### Graph View
+
 ### Tree View - Historical View
 
-
 ### Print the list of active DAGs
-airflow list_dags
 
+airflow list\_dags
 
 ### Sync DAGs with GIT Repository
-apt-get update && apt-get install git -y && apt-get install cron -y && apt-get install vim -y 
 
-git reset --hard HEAD
-git pull
+apt-get update && apt-get install git -y && apt-get install cron -y && apt-get install vim -y
+
+git reset --hard HEAD git pull
 
