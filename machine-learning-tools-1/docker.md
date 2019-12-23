@@ -11,5 +11,5 @@ docker image prune -a
 
 ## Clean Docker Environment
 docker container stop $(docker container ls -aq)
-docker container prune
-docker image prune -a
+docker container prune -f
+docker image prune -a -f
