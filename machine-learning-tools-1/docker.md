@@ -1,5 +1,8 @@
 # Docker
 
+## Build Docker file 
+docker build -f DOCKERFILE
+
 ## Stop all Containers 
 docker container stop $(docker container ls -aq)
 
