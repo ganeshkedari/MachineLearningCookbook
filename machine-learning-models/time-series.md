@@ -38,3 +38,4 @@ Compute the differences between consecutive observations
 - https://towardsdatascience.com/time-series-of-price-anomaly-detection-13586cd5ff46
 
 - https://towardsdatascience.com/anomaly-detection-for-dummies-15f148e559c1
+
