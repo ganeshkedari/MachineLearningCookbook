@@ -8,17 +8,17 @@ According to Arthur Samuel , " Machine learning is the field of study that gives
 
 Common Types of Machine Learning Problems :
 
-##Supervised Learning :
+## Supervised Learning :
 
 House Price Prediction - Regression 
 
 Cancer Prediction - Classification
 
-###Single features 
+### Single features 
 
-###Multi-features
+### Multi-features
 
-###Support Vector Method
+### Support Vector Method
 
 
 
