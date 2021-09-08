@@ -32,3 +32,9 @@ Compute the differences between consecutive observations
 - Correlation between previous and current time period (t-1 and t)
 ## Integration (d)
 ## Moving Average (Q)
+
+# Referances :
+
+- https://towardsdatascience.com/time-series-of-price-anomaly-detection-13586cd5ff46
+
+- https://towardsdatascience.com/anomaly-detection-for-dummies-15f148e559c1

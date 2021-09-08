@@ -81,37 +81,64 @@ Workflow of multiple tasks which can be run independently Start -&gt; Tasks -&gt
       * Combined \(Parallel\)    
 
 ## Installation
-
-```text
-docker pull puckel/docker-airflow
-docker run -d -p 8080:8080 -e LOAD_EX=n puckel/docker-airflow
-```
-
+### Install Airflow as Docker Container
+    docker pull puckel/docker-airflow
+    docker run -d -p 8080:8080 -e LOAD_EX=n puckel/docker-airflow
 * Accessing Containers
 
-  \`\`\`\` 
+  ```
+	docker run --rm -ti puckel/docker-airflow bash
+  docker run --rm -ti puckel/docker-airflow ipython
+  ```
+  
+* Initialize Airflow Database
 
-    docker run --rm -ti puckel/docker-airflow bash
+  ```
+  airflow initdb
+  ```
 
-    docker run --rm -ti puckel/docker-airflow ipython
+* Restart Airflow Scheduler
 
-```text
+  ```
+  airflow scheduler
+  ```
+
+   
+
 * Access As root
-```
 
-```text
-docker exec -u root -it <containerID> bash
-```
+  ```
+  docker exec -u root -it <containerID> bash
+  ```
 
-```text
+* Install PS/GIT/VIM Command
+
+  ```
+  apt-get update && apt-get install procps -y && apt-get update && apt-get install git -y && apt-get install cron -y && apt-get install vim -y && apt-get install zip -y
+  ```
+
+  
+
 * Kill all airflow schedulers
-```
 
 ```text
 kill $(ps -ef | grep "airflow scheduler" | awk '{print $2}')
 ```
 
-\`\`\`\`
+- Set Load Examples to False in airflow.cfg
+
+```
+load_examples = False
+```
+
+Generate Fernet Key in bash
+
+```
+FERNET_KEY=$(python -c "from cryptography.fernet import Fernet; FERNET_KEY = Fernet.generate_key().decode(); print(FERNET_KEY)")
+export FERNET_KEY=$FERNET_KEY
+```
+
+
 
 Components Metadata Database - MYSQL Webserver - Flask Scheduler - Python Celery
 
@@ -125,6 +152,8 @@ Executor Types Debugging Testing pipelines
 
 ## Admin Views
 
+Airflow Admin UI can be accessed using http://<HOSTNAME>:8080/admin/
+
 ### Graph View
 
 ### Tree View - Historical View
@@ -137,5 +166,24 @@ airflow list\_dags
 
 apt-get update && apt-get install git -y && apt-get install cron -y && apt-get install vim -y
 
-git reset --hard HEAD git pull
+git reset --hard && git pull
 
+
+
+Airflow Scheduler Examples
+
+Every 5 Mins : */5 * * * *
+
+Testing Dags
+
+```
+python ~/airflow/dags/myDag.py
+airflow list_dags	
+airflow list_tasks tutorial --tree
+```
+
+
+
+### Generalizing data load processes with Airflow
+
+https://towardsdatascience.com/generalizing-data-load-processes-with-airflow-a4931788a61f
