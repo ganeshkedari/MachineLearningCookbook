@@ -13,6 +13,7 @@
 * [Jupyter-Notebook](machine-learning-tools-1/jupyter-notebook.md)
 * [spyder](machine-learning-tools-1/spyder.md)
 * [Apache Airflow](machine-learning-tools-1/airflow.md)
+* [Sphinx](machine-learning-tools-1/sphinx.md)
 
 ## Machine Learning Concepts <a id="machine-learning-concepts-1"></a>
 
@@ -25,5 +26,7 @@
 * [Percentiles](machine-learning-concepts-1/percentiles.md)
 * [Moments](machine-learning-concepts-1/moments.md)
 
-## Machine Learning Models <a id="machine-learning-models"></a>
+## Machine Learning Models
+
 * [Time Series Forcasting](machine-learning-models/time-series.md)
+
