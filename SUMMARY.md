@@ -14,6 +14,8 @@
 * [spyder](machine-learning-tools-1/spyder.md)
 * [Apache Airflow](machine-learning-tools-1/airflow.md)
 * [Sphinx](machine-learning-tools-1/sphinx.md)
+* [Apache Spark](machine-learning-tools-1/spark-overview.md)
+* [Hadoop](machine-learning-tools-1/hadoop.md)
 
 ## Machine Learning Concepts <a id="machine-learning-concepts-1"></a>
 
